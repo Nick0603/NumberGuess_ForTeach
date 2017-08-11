@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <script type="text/javascript" src="js/jquery-1.12.2.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.js"></script>
+    <title>numberGuess</title>
+</head>
+
+<body>
+    <div class="container setting">
+        <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-10">
+                <img class="logo" class="logo" src="./images/logo.png" alt="logo">
+                <span class="heading">猜數字遊戲</span>
+            </div>
+            <div class="col-md-1">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <p>
+                    簡單(easy):
+                    <input type="radio" name="level" value="easy">
+                </p>
+                <img src="./images/easy.png" alt="easy">
+            </div>
+            <div class="col-md-4">
+                <p>
+                    普通(normal):
+                    <input type="radio" name="level" value="normal">
+                </p>
+                <img src="./images/normal.png" alt="normal">
+            </div>
+            <div class="col-md-4">
+                <p>
+                    困難(hard):
+                    <input type="radio" name="level" value="hard">
+                </p>
+                <img src="./images/hard.png" alt="hard">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <input type="button" id="startGameBtn" value="開始遊戲" class="btn btn-secondary">
+            </div>
+        </div>
+    </div>
+    <div class="container gameDiv">
+        <div class="row">
+            <div class="col-md-12 heading">
+                <label for="text" id="minNumberLabel">下界</label>
+                ~
+                <label for="text" id="maxNumberLabel">上界</label>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <span>覺得</span>
+                <input id="guessInput" type="text"><span>是答案</span>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2"></div>
+            <div class="col-md-4">
+                <input type="button" id="guessBtn" value="送出" class="btn btn-secondary">
+            </div>
+            <div class="col-md-4">
+                <input type="button" id="clearBtn" value="清空" class="btn btn-secondary">
+            </div>
+            <div class="col-md-2"></div>
+        </div>
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
